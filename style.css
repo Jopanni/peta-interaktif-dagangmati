@@ -1,0 +1,135 @@
+/* Custom Styles */
+:root {
+    --primary: #0d6efd;
+    --secondary: #6c757d;
+    --success: #198754;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #212529;
+}
+
+.underline {
+    width: 80px;
+    height: 4px;
+    background: var(--primary);
+    margin-top: 10px;
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--light);
+    border-radius: 0.5rem;
+}
+
+#desa-map {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.location-marker {
+    position: absolute;
+    display: none;
+    transform: translate(-50%, -100%);
+    z-index: 10;
+    text-align: center;
+}
+
+.location-marker .marker-pin {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    position: relative;
+    margin: 0 auto;
+    border: 2px solid white;
+}
+
+.location-marker .marker-pin::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: inherit;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.location-marker .marker-info {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    color: var(--dark);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* Warna marker berbeda untuk setiap lokasi */
+.balai .marker-pin {
+    background: var(--primary);
+}
+.puskesmas .marker-pin {
+    background: var(--danger);
+}
+.sekolah .marker-pin {
+    background: var(--success);
+}
+
+/* Efek hover pada peta */
+#desa-map:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .map-container {
+        max-width: 100%;
+    }
+    
+    .card-body .d-flex {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .location-btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    #home {
+        text-align: center;
+    }
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Active nav link */
+.nav-link.active {
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+}
