@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padukuhan Dagangmati - Peta Interaktif</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-map-marked-alt me-2"></i>Padukuhan Dagangmati
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home"><i class="fas fa-home me-1"></i> Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profile"><i class="fas fa-info-circle me-1"></i> Profil Desa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#map"><i class="fas fa-map me-1"></i> Peta Desa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team"><i class="fas fa-users me-1"></i> Tim Kami</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Halaman Beranda -->
+    <section id="home" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="display-4 fw-bold text-primary">Selamat Datang di Padukuhan Dagangmati</h1>
+                    <p class="lead my-4">Desa yang indah dengan masyarakat yang ramah dan penuh semangat dalam membangun desa.</p>
+                    <a href="#map" class="btn btn-primary btn-lg px-4 me-2">
+                        <i class="fas fa-map-marked-alt me-2"></i>Lihat Peta
+                    </a>
+                    <a href="#profile" class="btn btn-outline-primary btn-lg px-4">
+                        <i class="fas fa-info-circle me-2"></i>Tentang Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Halaman Profil Desa -->
+    <section id="profile" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary">Profil Desa</h2>
+                <div class="underline mx-auto"></div>
+            </div>
+            <div class="text-center mb-5">
+                <p class="lead my-4">Desa Dagangmati merupakan bagian dari Kalurahan Petir, Kapanewon Rongkop, Kabupaten Gunungkidul, Daerah Istimewa Yogyakarta. Wilayah ini terdiri atas dua Rukun Tetangga, yaitu RT 34 dan RT 35, yang termasuk dalam RW 13. Jumlah kepala keluarga di masing-masing RT adalah sebanyak 35 KK, sehingga total terdapat 70 kepala keluarga di Desa Dagangmati.</p>
+
+                <p class="lead my-4">Secara geografis, Desa Dagangmati berada di kawasan perbukitan karst yang menjadi ciri khas wilayah Rongkop. Kondisi tanah kapur dan kontur berbukit membuat tantangan tersendiri dalam kehidupan sehari-hari, terutama dalam hal pertanian dan pemenuhan air bersih. Meski demikian, masyarakat setempat telah lama mengembangkan cara hidup yang adaptif, termasuk dengan menanam tanaman yang sesuai dengan iklim dan kondisi tanah, serta mengelola sumber air secara bijak.</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary">
+                                <i class="fas fa-landmark me-2"></i>Sejarah Desa
+                            </h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item border-0">
+                                    Asal-usul nama Dagangmati menyimpan kisah unik yang masih dituturkan secara lisan oleh warga setempat. Berdasarkan cerita dari Bapak Suraman, mantan Dukuh Dagangmati, nama ini bermula dari peristiwa seorang pedagang gerabah yang meninggal dunia di wilayah ini karena menyantap makanan basi tanpa sempat meminum air (Aging). Peristiwa itu menjadi asal-usul penamaan "Dagangmati", yang secara harfiah berarti “pedagang mati”. Nama ini sempat diubah menjadi “Jatisari” karena dianggap terlalu menyeramkan dan kurang sedap didengar. Namun, atas permintaan warga yang merasa memiliki keterikatan historis dengan nama lama tersebut, akhirnya nama Dagangmati kembali digunakan secara resmi.
+                                </li>
+                                <li class="list-group-item border-0">
+                                    Mayoritas warga Desa Dagangmati bekerja sebagai petani dan buruh tani. Meskipun tinggal di wilayah yang cukup terpencil dan menghadapi berbagai keterbatasan, masyarakat tetap menunjukkan semangat hidup yang tinggi dan rasa kebersamaan yang kuat. Gotong royong masih menjadi landasan utama dalam kehidupan sosial, mulai dari kegiatan bertani, pembangunan infrastruktur desa, hingga perayaan-perayaan tradisional.
+                                </li>
+                                <li class="list-group-item border-0">
+                                    Budaya Karawitan, pengolahan jamu tradisional, serta kegiatan bersama PKK dan Karang Taruna menjadi bentuk nyata dari upaya pelestarian nilai-nilai tradisional yang dikombinasikan dengan semangat generasi muda. Dukungan dari para tokoh desa seperti Bapak Dukuh dan para sesepuh menjadi kunci keberlangsungan kegiatan-kegiatan ini.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary">
+                                <i class="fas fa-users me-2"></i>Tradisi Dan Kepercayaan Lokal
+                            </h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item border-0">
+                                    Salah satu unsur penting dalam tradisi lokal Dagangmati adalah kepercayaan terhadap pohon Ipek. Pohon ini dianggap sakral dan dipercaya dijaga oleh makhluk halus. Masyarakat meyakini bahwa pohon ipek adalah pelindung dusun, sehingga terdapat larangan untuk menebang atau merusaknya tanpa izin. Konon, pernah ada seseorang yang hendak mencuri di sekitar pohon tersebut namun malah tersesat dan tidak bisa menemukan jalan pulang. Kisah ini terus hidup dalam memori kolektif warga, menjadi pengingat untuk tetap menghormati alam dan leluhur.
+                                </li>
+                                <li class="list-group-item border-0">
+                                    Warga Dagangmati sudah aktif menjaga dan melestarikan berbagai tradisi. Aktivitas budaya berlangsung secara alami, seperti kegiatan Rasulan atau bersih dusun, hingga pertunjukan seni lokal yang dilakukan secara swadaya.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary">
+                                <i class="fas fa-praying-hands me-2"></i>Harapan untuk Generasi Muda
+                            </h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item border-0">
+                                    Dalam wawancaranya, Bapak Suraman menyampaikan harapannya kepada generasi muda agar terus menjaga budaya lokal dan tradisi desa. Ia mengungkapkan bahwa budaya Dagangmati sempat mengalami kemunduran, namun ia percaya generasi penerus bisa menghidupkan kembali nilai-nilai luhur yang telah diwariskan oleh para leluhur.
+                                </li>
+                                <li class="list-group-item border-0">
+                                    Desa Dagangmati mungkin kecil dan terletak jauh dari hiruk-pikuk kota, namun justru dari ketenangan dan kesederhanaan inilah tumbuh nilai-nilai kehidupan yang mengakar kuat. Sejarah yang diwariskan secara lisan, alam yang menantang namun bersahabat, serta masyarakat yang penuh semangat gotong royong menjadi identitas khas yang patut dijaga dan dibanggakan.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Halaman Peta -->
+    <section id="map" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary">Peta Desa Interaktif</h2>
+                <p class="lead">Temukan fasilitas penting di desa kami</p>
+                <div class="underline mx-auto"></div>
+            </div>
+
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <div class="map-container position-relative mx-auto" style="max-width: 800px;">
+                        <img id="desa-map" src="map dmi.png" alt="Peta Desa" class="img-fluid rounded border">
+                        
+                        <!-- Marker untuk berbagai lokasi -->
+                        <div class="location-marker balai" data-location="balai">
+                            <div class="marker-pin"></div>
+                            <div class="marker-info">Balai Padukuhan</div>
+                        </div>
+                        
+                        <div class="location-marker rw" data-location="rw">
+                            <div class="marker-pin"></div>
+                            <div class="marker-info">Ketua RW</div>
+                        </div>
+                        
+                        <div class="location-marker dukuh" data-location="dukuh">
+                            <div class="marker-pin"></div>
+                            <div class="marker-info">Dukuh</div>
+                        </div>
+                        
+                        <div class="location-marker rt34" data-location="rt34">
+                            <div class="marker-pin"></div>
+                            <div class="marker-info">Ketua RT 34</div>
+                        </div>
+                        
+                        <div class="location-marker rt35" data-location="rt35">
+                            <div class="marker-pin"></div>
+                            <div class="marker-info">Ketua RT 35</div>
+                        </div>
+                        
+                        <div class="location-marker karangtaruna" data-location="karangtaruna">
+                            <div class="marker-pin"></div>
+                            <div class="marker-info">Ketua Karang Taruna</div>
+                        </div>
+                        
+                        <div class="location-marker lpmp" data-location="lpmp">
+                            <div class="marker-pin"></div>
+                            <div class="marker-info">Ketua LPMP</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <i class="fas fa-map-marker-alt me-2"></i>Lokasi Penting
+                </div>
+                <div class="card-body">
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                        <button class="btn btn-outline-primary location-btn" data-location="balai">
+                        <i class="fas fa-landmark me-2"></i>Balai Padukuhan
+                        </button>
+                        <button class="btn btn-outline-info location-btn" data-location="rw">
+                            <i class="fas fa-user-tie me-2"></i>Ketua RW
+                        </button>
+                        <button class="btn btn-outline-secondary location-btn" data-location="dukuh">
+                            <i class="fas fa-user-shield me-2"></i>Dukuh
+                        </button>
+                        <button class="btn btn-outline-success location-btn" data-location="rt34">
+                            <i class="fas fa-user me-2"></i>Ketua RT 34
+                        </button>
+                        <button class="btn btn-outline-success location-btn" data-location="rt35">
+                            <i class="fas fa-user me-2"></i>Ketua RT 35
+                        </button>
+                        <button class="btn btn-outline-warning location-btn" data-location="karangtaruna">
+                            <i class="fas fa-users me-2"></i>Karang Taruna
+                        </button>
+                        <button class="btn btn-outline-danger location-btn" data-location="lpmp">
+                            <i class="fas fa-hands-helping me-2"></i>LPMP
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Halaman Tim -->
+    <section id="team" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary">Tim Pengembang</h2>
+                <p class="lead">Orang-orang di balik pembuatan website ini</p>
+                <div class="underline mx-auto"></div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-5 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <img src="jopan.jpg" alt="Anggota Tim 1" class="rounded-circle mb-3" width="120">
+                            <h3 class="h4">Jovanni Gabirel Nugroho</h3>
+                            <p class="text-muted">Mahasiswa KKN 70</p>
+                            <p class="card-text">Bertanggung jawab dalam pengembangan front-end dan back-end website.</p>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="https://www.instagram.com/jovanni_gab/" class="text-primary"><i class="fab fa-instagram fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <img src="sasta.jpg" alt="Anggota Tim 2" class="rounded-circle mb-3" width="120">
+                            <h3 class="h4">Fransiska Sasta</h3>
+                            <p class="text-muted">Mahasiswa KKN 70</p>
+                            <p class="card-text">Bertanggung jawab dalam isi content pada website.</p>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="https://www.instagram.com/sastafransiska/" class="text-primary"><i class="fab fa-instagram fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 KKN 70. Universitas Sanata Dharma.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
